@@ -21,7 +21,6 @@ use Symfony\Component\Serializer\Annotation\Groups;
  */
 class Example extends Base
 {
-    // Try and serialize $traitProperty
     use BaseTrait;
 
     /**
