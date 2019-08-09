@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 trait BaseTrait
@@ -9,12 +10,14 @@ trait BaseTrait
     /**
      * @var string
      * @Groups({"read", "write", "create"})
+     * @ORM\Column(type="string", length=255)
      */
     private $traitPropertySuccess;
 
     /**
      * @var string
      * @Groups({"create"})
+     * @ORM\Column(type="string", length=255)
      */
     private $traitPropertyFail;
 

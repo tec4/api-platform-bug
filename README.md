@@ -19,6 +19,10 @@ composer install
 
 # Start local server on localhost 
 symfony server:start -d
+
+# Create database and update schema
+bin/console doctrine:database:create && bin/console doctrine:schema:update --force
+
 ```
 
 ## Reproducing Error
